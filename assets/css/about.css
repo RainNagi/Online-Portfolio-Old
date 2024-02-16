@@ -1,0 +1,252 @@
+@import url("styles.css");
+
+#about {
+    height: 100%;
+    background-image: url(../images/aboutBg.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+}
+
+#about .container .title {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 64px;
+    margin: 64px 0 0 0;
+}
+
+#about .container .about_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.about_leftSide {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about_leftSide img {
+    width: 400px;
+    background-color: gray;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about_rightSide {
+    background-color: #0b1e52b2;
+    width: 65%;
+    margin-left: 50px;
+    padding: 0 32px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    color: whitesmoke;
+}
+
+.about_rightSide .about_name {
+    font-family: monospace;
+    font-size: 40px;
+    margin: 0;
+}
+.about_rightSide .about_name span{
+    text-shadow: 1px 2px black;
+    color: #3258C1;
+}
+
+.about_rightSide .about_intro {
+    font-family: monospace;
+    font-size: 2.80px;
+    margin-bottom: 32px;
+}
+
+
+.about_rightSide .content {
+    margin-top: 5px;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+.optionbtn {
+    margin-top: 10px;
+}
+
+.optionbtn .tab-title{
+    display: flex;
+    gap: 30px;
+}
+.optionbtn .tab-title{
+    display: flex;
+    gap: 30px;
+}
+.optionbtn .tab-title p{
+    padding: 5px 13px;
+    border-radius: 20px;
+    background-color: #0492f0;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+    font-family: 'Caramelia', sans-serif;
+    border: none;
+    transition: 0.6s;
+}
+.optionbtn .tab-title p:hover{
+    background-color: rgb(42, 0, 158);
+    cursor: pointer;
+}
+/* Skills */
+.skills {
+    font-size: 25px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    
+}
+.progresstxt{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 10px 1px 15px;
+
+}
+.progresstxt p{
+    font-size: 20px;
+
+}
+.skills .progress_borderpy{
+    border: 3px solid rgb(0, 148, 247);
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.skills .pyprogress{
+    background-color: rgb(0, 148, 247);
+    border-radius: 20px;
+    width: 75%;
+}
+.skills .progress_borderjava{
+    border: 3px solid rgb(255, 0, 0);
+    width: 100%;
+    border-radius: 20px;
+    
+    
+}
+.skills .javaprogress{
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    width: 70%;
+}
+
+.skills .progress_borderhtml{
+    border: 3px solid rgb(194, 127, 3);
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.skills .htmlprogress{
+    background-color: rgb(194, 127, 3);
+    border-radius: 20px;
+    width: 70%;
+}
+
+.skills .progress_borderjs{
+    border: 3px solid rgb(0, 223, 82);
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.skills .jsprogress{
+    background-color: rgb(0, 223, 82);
+    border-radius: 20px;
+    width: 50%;
+}
+.skills .progress_bordercss{
+    border: 3px solid rgb(0, 6, 82);
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.skills .cssprogress{
+    background-color: rgb(0, 6, 82);
+    border-radius: 20px;
+    width: 45%;
+}
+/* Educational Background */
+.education {
+    display: none;
+    margin: 20px 0 0 0;
+    font-family: monospace;
+}
+.education p{
+    margin: 10px 0 0 0 ;
+    font-size: 25px;
+    font-weight: 500;
+}
+.education li{
+    margin: 10px 0 0 0 ;
+    text-indent: 40px;
+    font-size: 15px;
+}
+@media (max-width: 1075px) {
+    .about_leftSide img {
+        width: 305px;
+        height: auto;
+    }
+    #about .container .about_content {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .about_leftSide, .about_rightSide {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about_rightSide {
+        padding: 0 2rem 0 2rem;
+        margin: 0 200px 0 0;
+    }
+
+}
+
+@media (max-width: 790px) {
+    .about_rightSide .about_title {
+        font-size: 2rem;
+    }
+
+    .about_rightSide .about_subtitle {
+        font-size: 2rem;
+    }
+
+    .about_rightSide .icons img {
+        width: 75px;
+    }
+
+    .about_rightSide .button a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about_leftSide img {
+        width: 250px;
+        height: auto;
+    }
+
+}
