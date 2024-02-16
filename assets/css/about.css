@@ -1,13 +1,10 @@
-@import url("styles.css");
-
 #about {
     height: 100%;
     background-image: url(../images/aboutBg.png);
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-size: cover;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #about .container {
@@ -49,6 +46,7 @@
 .about_rightSide {
     background-color: #0b1e52b2;
     width: 65%;
+    height: 100%;
     margin-left: 50px;
     padding: 0 32px 0 50px;
     display: flex;
@@ -122,12 +120,15 @@
 .progresstxt{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1px 10px 1px 15px;
 
 }
 .progresstxt p{
     font-size: 20px;
-
+}
+.percent{
+    font-size: 10px;
 }
 .skills .progress_borderpy{
     border: 3px solid rgb(0, 148, 247);
@@ -225,7 +226,7 @@
 
 }
 
-@media (max-width: 790px) {
+@media (max-width: 992px) {
     .about_rightSide .about_title {
         font-size: 2rem;
     }
@@ -243,10 +244,31 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 773px) {
     .about_leftSide img {
-        width: 250px;
+        width: 200px;
         height: auto;
     }
+
+    #about .container .title{
+        font-size: 30px;
+        
+    }
+    #about .about_name {
+        font-size: 30px;
+    }
+    .about_rightSide .content {
+        font-size: 10px;
+    }
+    .optionbtn .tab-title p {
+        font-size: 10px;
+    }
+    .progresstxt{
+        font-size: 10px;
+    }
+    .progresstxt p{
+        font-size: 10px;
+    }
+    
 
 }
